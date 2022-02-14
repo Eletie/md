@@ -1,10 +1,7 @@
-Skaitlis = int(input("Ievadi veselu skaitli: "))
+T = int(input("Cik litru ūdens ir akvārijā? "))
+V = int(input("Cik litru ūdens vajag 1 zivtiņai? "))
+Z = int(input("Cik zivtinu ir akvārijā? "))
 
-Summa = 0
-while (Skaitlis > 0):
-  Cipars = Skaitlis % 10
-  Skaitlis = int(Skaitlis / 10)
-  Summa += Cipars
+N = int(T / V)
 
-print("Rezultāts: " + str(Summa))
-
+print("Jāpārceļ " , int(Z - N) , "zivtiņas.")
